@@ -1,6 +1,7 @@
 # Athena
 
 A document annotation tool with AI-powered summaries. Upload and manage documents, highlight text to add annotations and comments, link related passages across documents, and generate AI summaries via the Gemini API.
+My Team and I build this during a hackathon. We are commited to develop this even further.
 
 ## Features
 
