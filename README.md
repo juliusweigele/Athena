@@ -1,21 +1,40 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Athena
 
-# Run and deploy your AI Studio app
+A document annotation tool with AI-powered summaries. Upload and manage documents, highlight text to add annotations and comments, link related passages across documents, and generate AI summaries via the Gemini API.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/508deb74-fa53-4726-8836-410ad5730ce5
+- Document search and management
+- Text highlighting with inline annotations and comments
+- Cross-document linking of related passages
+- AI-generated document summaries (Gemini)
+- Local SQLite database — no cloud backend needed
 
-## Run Locally
+## Getting Started
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
-# Athena
+   ```bash
+   npm install
+   ```
+
+2. Create a `.env.local` file and add your Gemini API key:
+   ```
+   GEMINI_API_KEY=your_api_key_here
+   ```
+   Get a free key at [aistudio.google.com/apikey](https://aistudio.google.com/apikey)
+
+3. Start the dev server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000)
+
+## Tech Stack
+
+- **Frontend:** React, TypeScript, Tailwind CSS
+- **Backend:** Express, SQLite (better-sqlite3)
+- **AI:** Google Gemini API (`@google/genai`)
+- **Build:** Vite, tsx
